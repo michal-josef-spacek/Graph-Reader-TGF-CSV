@@ -1,0 +1,11 @@
+TODO
+====
+1. Jak udelat, aby se nemusela volat znova _init() a prepsala se
+   _vertex_callback()?
+2. Implementace edge callback.
+3. Testy.
+4. Man page.
+5.
+
+Applied
+=======
