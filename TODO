@@ -1,7 +1,5 @@
 TODO
 ====
-1. Jak udelat, aby se nemusela volat znova _init() a prepsala se
-   _vertex_callback()?
 2. Implementace edge callback.
 3. Testy.
 4. Man page.
@@ -9,3 +7,6 @@ TODO
 
 Applied
 =======
+1. Jak udelat, aby se nemusela volat znova _init() a prepsala se
+   _vertex_callback()?
+OK [20140603] skim
