@@ -59,3 +59,121 @@ sub _vertex_callback {
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Graph::Reader::TGF::CSV - Perl class for reading a graph from TGF format with CSV labeling.
+
+=head1 SYNOPSIS
+
+ use Graph::Reader::TGF::CSV;
+ my $obj = Graph::Reader::TGF::CSV->new;
+ my $graph = $obj->read_graph($tgf_csv_file);
+
+=head1 METHODS
+
+=over 8
+
+=item C<new()>
+
+ Constructor.
+ This doesn't take any arguments.
+ Returns Graph::Reader::TGF::CSV object.
+
+=item C<read_graph($tgf_csv_file)>
+
+ Read a graph from the specified file.
+ The argument can either be a filename, or a filehandle for a previously opened file.
+ Returns Graph object.
+
+=back
+
+=head1 TGF WITH CSV LABELING FILE FORMAT
+
+ TGF = Trivial Graph Format
+ TGF file format is described on L<https://en.wikipedia.org/wiki/Trivial_Graph_Format|English Wikipedia - Trivial Graph Format>
+ Example with CSV labeling:
+ 1 label=First node,color=red
+ 2 label=Second node,color=cyan
+ #
+ 1 2 label=Edge between the two,color=green
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Graph::Reader::TGF::CSV;
+ use IO::Barf qw(barf);
+ use File::Temp qw(tempfile);
+
+ # Example data.
+ my $data = <<'END';
+ 1 label=First node,green=red
+ 2 label=Second node,green=cyan
+ #
+ 1 2 label=Edge between the two,color=green
+ END
+
+ # Temporary file.
+ my (undef, $tempfile) = tempfile();
+
+ # Save data to temp file.
+ barf($tempfile, $data);
+
+ # Reader object.
+ my $obj = Graph::Reader::TGF->new;
+
+ # Get graph from file.
+ my $g = $obj->read_graph($tempfile);
+
+ # Print to output.
+ print $g."\n";
+
+ # Clean temporary file.
+ unlink $tempfile;
+
+ # Output:
+ # 1-2
+
+=head1 DEPENDENCIES
+
+L<Error::Pure>,
+L<Graph::Reader::TGF>,
+L<Text::CSV>.
+
+=head1 SEE ALSO
+
+L<Graph::Reader>,
+L<Graph::Reader::Dot>,
+L<Graph::Reader::HTK>,
+L<Graph::Reader::LoadClassHierarchy>,
+L<Graph::Reader::UnicodeTree>,
+L<Graph::Reader::TGF>,
+L<Graph::Reader::XML>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Graph-Reader-TGF-CSV>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
