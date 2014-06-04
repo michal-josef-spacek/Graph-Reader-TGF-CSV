@@ -12,12 +12,19 @@ use Text::CSV;
 # Version.
 our $VERSION = 0.01;
 
-# Vertex callback.
-sub _vertex_callback {
-	my ($self, $graph, $id, $vertex_label) = @_;
+# Initialization.
+sub _init {
+	my ($self, $param_hr) = @_;
+	$self->SUPER::_init();
 	if (! exists $self->{'_csv'}) {
 		$self->{'_csv'} = Text::CSV->new({'binary' => 1});
 	}
+	return;
+}
+
+# Vertex callback.
+sub _vertex_callback {
+	my ($self, $graph, $id, $vertex_label) = @_;
 	my $status = $self->{'_csv'}->parse($vertex_label);
 	if (! $status) {
 		err 'Cannot parse label.',
