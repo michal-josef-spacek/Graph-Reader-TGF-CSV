@@ -3,9 +3,11 @@ use strict;
 use warnings;
 
 # Modules.
+use English qw(-no_match_vars);
+use Error::Pure::Utils qw(clean);
 use File::Object;
 use Graph::Reader::TGF::CSV;
-use Test::More 'tests' => 8;
+use Test::More 'tests' => 10;
 use Test::NoWarnings;
 
 # Data dir.
@@ -27,3 +29,17 @@ is($ret->get_edge_attribute('1', '2', 'label'), 'Edge',
 	'Get edge label attribute.');
 is($ret->get_edge_attribute('1', '2', 'color'), 'cyan',
 	'Get edge color attribute.');
+
+# Test.
+eval {
+	$obj->read_graph($data_dir->file('ex2.tgf')->s);
+};
+is($EVAL_ERROR, "Cannot parse vertex label.\n", 'Cannot parse vertex label.');
+clean();
+
+# Test.
+eval {
+	$obj->read_graph($data_dir->file('ex3.tgf')->s);
+};
+is($EVAL_ERROR, "Cannot parse edge label.\n", 'Cannot parse edge label.');
+clean();

@@ -16,6 +16,8 @@ MANIFEST			This list of files
 META.yml
 README
 t/data/ex1.tgf
+t/data/ex2.tgf
+t/data/ex3.tgf
 t/Graph-Reader-TGF-CSV/00-use.t
 t/Graph-Reader-TGF-CSV/01-version.t
 t/Graph-Reader-TGF-CSV/02-pod_coverage.t
