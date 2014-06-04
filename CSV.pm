@@ -20,7 +20,6 @@ sub _edge_callback {
 		err 'Cannot parse edge label.',
 			'Error', $self->{'_csv'}->error_input,
 			'String', $edge_label;
-		return;
 	}
 	my %params = map { split m/=/ms, $_ } $self->{'_csv'}->fields;
 	foreach my $key (keys %params) {
@@ -45,7 +44,6 @@ sub _vertex_callback {
 		err 'Cannot parse vertex label.',
 			'Error', $self->{'_csv'}->error_input,
 			'String', $vertex_label;
-		return;
 	}
 	my %params = map { split m/=/ms, $_ } $self->{'_csv'}->fields;
 	foreach my $key (keys %params) {
