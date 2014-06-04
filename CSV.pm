@@ -93,7 +93,7 @@ Graph::Reader::TGF::CSV - Perl class for reading a graph from TGF format with CS
 =head1 TGF WITH CSV LABELING FILE FORMAT
 
  TGF = Trivial Graph Format
- TGF file format is described on L<https://en.wikipedia.org/wiki/Trivial_Graph_Format|English Wikipedia - Trivial Graph Format>
+ TGF file format is described on L<English Wikipedia - Trivial Graph Format|https://en.wikipedia.org/wiki/Trivial_Graph_Format>
  Example with CSV labeling:
  1 label=First node,color=red
  2 label=Second node,color=cyan
