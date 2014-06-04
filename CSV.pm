@@ -33,9 +33,7 @@ sub _edge_callback {
 sub _init {
 	my ($self, $param_hr) = @_;
 	$self->SUPER::_init();
-	if (! exists $self->{'_csv'}) {
-		$self->{'_csv'} = Text::CSV->new({'binary' => 1});
-	}
+	$self->{'_csv'} = Text::CSV->new({'binary' => 1});
 	return;
 }
 
