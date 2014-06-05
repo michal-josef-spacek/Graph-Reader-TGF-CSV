@@ -29,6 +29,8 @@ TGF WITH CSV LABELING FILE FORMAT
 
 ERRORS
      new():
+             Cannot create Text::CSV object.
+                     Error: %s
              Cannot parse edge label.
                      Error: %s
                      String: %s
