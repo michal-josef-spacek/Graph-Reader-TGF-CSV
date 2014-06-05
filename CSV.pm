@@ -10,7 +10,7 @@ use Error::Pure qw(err);
 use Text::CSV;
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Edge callback.
 sub _edge_callback {
@@ -186,6 +186,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
