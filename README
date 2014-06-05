@@ -27,6 +27,15 @@ TGF WITH CSV LABELING FILE FORMAT
      #
      1 2 label=Edge between the two,color=green
 
+ERRORS
+     new():
+             Cannot parse edge label.
+                     Error: %s
+                     String: %s
+             Cannot parse vertex label.
+                     Error: %s
+                     String: %s
+
 EXAMPLE
      # Pragmas.
      use strict;

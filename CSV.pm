@@ -98,6 +98,16 @@ Graph::Reader::TGF::CSV - Perl class for reading a graph from TGF format with CS
  #
  1 2 label=Edge between the two,color=green
 
+=head1 ERRORS
+
+ new():
+         Cannot parse edge label.
+                 Error: %s
+                 String: %s
+         Cannot parse vertex label.
+                 Error: %s
+                 String: %s
+
 =head1 EXAMPLE
 
  # Pragmas.
