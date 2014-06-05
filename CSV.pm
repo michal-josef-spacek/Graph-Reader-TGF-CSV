@@ -33,6 +33,10 @@ sub _init {
 	my ($self, $param_hr) = @_;
 	$self->SUPER::_init();
 	$self->{'_csv'} = Text::CSV->new({'binary' => 1});
+	if (! $self->{'_csv'}) {
+		err 'Cannot create Text::CSV object.',
+			'Error', Text::CSV->error_diag;
+	}
 	return;
 }
 
@@ -101,6 +105,8 @@ Graph::Reader::TGF::CSV - Perl class for reading a graph from TGF format with CS
 =head1 ERRORS
 
  new():
+         Cannot create Text::CSV object.
+                 Error: %s
          Cannot parse edge label.
                  Error: %s
                  String: %s
