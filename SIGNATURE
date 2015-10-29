@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.70.
+signed via the Module::Signature module, version 0.79.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,40 +14,42 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 3e5782b639171f83f0d47de3a3af5493727a2e08 CSV.pm
-SHA1 5e02e5879516d0fdca550e4160c1236a39ffa9ac Changes
-SHA1 d32d1b957eb6d99bd7b76fd8c33dac3bed505f96 LICENSE
-SHA1 8b58bfa85ac742ba5d63d18bb10898d274cf53a1 MANIFEST
-SHA1 38e09ffee996894cae532503adecb30ab5252f02 META.yml
-SHA1 e37d15fd8ace640757fe2aa296a969662fc5b563 Makefile.PL
-SHA1 8709b45b0163cbe69f05c54654f764ebfaf2f9d3 README
+SHA1 796590ad25a32c360058ca77e9d3aa5c00c784f4 CSV.pm
+SHA1 e688be1ef17a3e8abb80dbeaf9e0e19bb8fd1922 Changes
+SHA1 507a10efa92555ddddfbe72be27964d9e3eef80f LICENSE
+SHA1 0d69658011d6fdf598e417ce2afb296d7adf31b2 MANIFEST
+SHA1 a56bb9815a224e4dce2183280943d674b9090b2f META.yml
+SHA1 c98e6c04a38c0af429431c7e89602f9df71e12a0 Makefile.PL
+SHA1 fdb41413d008f9bb1b0bac932e1cc72680dd3427 README
 SHA1 13ab6631a9a11d81200eed3e94dcb3b29a7c7ab5 examples/ex1.pl
-SHA1 dc13ce0dbb488a5de81c3f6519ee31acda17397a inc/Module/Install.pm
-SHA1 91c20cbda8ca41b4e8f9e0390faff635c2ebe839 inc/Module/Install/Base.pm
-SHA1 eaf50ccbacecb797f0527deb0221c8264f6c8bd8 inc/Module/Install/Can.pm
-SHA1 363c8931cc183444907684b71d6a379e4fc8edcb inc/Module/Install/Fetch.pm
-SHA1 26ae1c0f5f352037b560414f216d7e3ac682f936 inc/Module/Install/Makefile.pm
-SHA1 ff97eb025b44c343d026c2a56a73d50c65319e95 inc/Module/Install/Metadata.pm
+SHA1 bce3c51bb369419603298064b78e14077b93af66 inc/Module/Install.pm
+SHA1 5c1a9d3a384a5262cbc105ab76d446047904c7fa inc/Module/Install/AuthorRequires.pm
+SHA1 d001b4b9a48395a8c4134b234a0e1789138427c5 inc/Module/Install/AuthorTests.pm
+SHA1 fe220f215f645500ce8f14ff5e19d9a28692af56 inc/Module/Install/Base.pm
+SHA1 b56ed8e42c600e08007d152cf0b1438a7c3b7f6e inc/Module/Install/Can.pm
+SHA1 99c531a17a67ce5250df2ae151cc48c80d914cde inc/Module/Install/Fetch.pm
+SHA1 76efdca3603159e0ae0e18f19fe72a0211a69529 inc/Module/Install/Makefile.pm
+SHA1 2e33e87882d60db3913da6284dd5295e5315e18a inc/Module/Install/Metadata.pm
 SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
-SHA1 4c5ce519d404e242418f51dfe761287469e18e3a inc/Module/Install/Win32.pm
-SHA1 47a52cf8719a283c0efa2edab0088b5d67e0f23a inc/Module/Install/WriteAll.pm
-SHA1 07f9b4542246bad13c4e7e3e7bc5fd036c2f1ce7 t/Graph-Reader-TGF-CSV/00-use.t
-SHA1 09c51a38ff587c8dbaa6263fb377a1377cbeae69 t/Graph-Reader-TGF-CSV/01-version.t
-SHA1 ac7888c2117c9056baef482be583dadb9ba68323 t/Graph-Reader-TGF-CSV/02-pod_coverage.t
-SHA1 21c966667684bac6a350cb3f2e8bde2fbe0e5a86 t/Graph-Reader-TGF-CSV/03-pod.t
-SHA1 20de9d9dfd27dbb0aedbd8a64a9eb8d06764b1d2 t/Graph-Reader-TGF-CSV/04-new.t
-SHA1 e18ad3bd84bf7a0141bc217932fc22de523b64d8 t/Graph-Reader-TGF-CSV/05-read_graph.t
+SHA1 c830b819e61bda5eca077c6291293bba61b3b9f2 inc/Module/Install/Win32.pm
+SHA1 cb52b9d6f88d512d448a6f35ed0af0d1201a134b inc/Module/Install/WriteAll.pm
+SHA1 07f9b4542246bad13c4e7e3e7bc5fd036c2f1ce7 t/Graph-Reader-TGF-CSV/01-use.t
+SHA1 6f3e2bd8ab6e317661bcdcf3685d7f9b5e6792b7 t/Graph-Reader-TGF-CSV/02-version.t
+SHA1 20de9d9dfd27dbb0aedbd8a64a9eb8d06764b1d2 t/Graph-Reader-TGF-CSV/03-new.t
+SHA1 e18ad3bd84bf7a0141bc217932fc22de523b64d8 t/Graph-Reader-TGF-CSV/04-read_graph.t
 SHA1 f273a9d11e4abe53489e2d884021701cdd6b8593 t/data/ex1.tgf
 SHA1 f2f695a9f7dfad01fbf588c08da8453b561576d3 t/data/ex2.tgf
 SHA1 f7444f0dfe0d45061ac3f30fcd407f70ff8b8735 t/data/ex3.tgf
+SHA1 ac7888c2117c9056baef482be583dadb9ba68323 xt/Graph-Reader-TGF-CSV/01-pod_coverage.t
+SHA1 21c966667684bac6a350cb3f2e8bde2fbe0e5a86 xt/Graph-Reader-TGF-CSV/02-pod.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
+Version: GnuPG v1
 
-iQEcBAEBAgAGBQJTkJhUAAoJEAwa+cf4dLBase4H/1yVitUmWDD8mMapoT1NesmO
-pCPannVaID+nssWf/HCs+2yZe3tyEwd4Hg71nX6TzfuWxMMBusiCX1KNl+BAjETi
-qBazMhCqbNGh5c4DE8LirPL3lJgt6fta/RkjIZpYc/qr3yNrtJDXupdm8LDeMXYG
-3wy6b9W521/DwZuYdhTgp5gl59xf1cgCeXBFsZZ67YDWF7LpxnmdZZuHJlzXF4RJ
-PTHSL9Sp63gIrzx0FjJ3h6bdPA33XvEfiqu3OePxmH0jq9N2cxB0OzdmLW79e9NU
-bRV04g5hgCQTIyF+bonMJH9WP5PI23w84SjieDHjZS0ZTSxLCtmfnk2VXP+15eQ=
-=6qMc
+iQEcBAEBAgAGBQJWMjwAAAoJEJe+XXKaIuTlJRMIAKi3m0hOMuFueHLEIDT6PufP
+aPvkQkJiPoBlr0qd82/SmHZa/z6pZVl9pYCyhebpon7huQXH88pD1/k31UJ4RlN/
+kF1MoH0pM6ZR8udm1ce3gL7xNEKt6k5ucpjVSLs3viu4vKK3uT1KeU819UMfF4Nc
+6eJtu1MpUiv7KyA2wUxjzmND7gAg62RuUz4ZStpZuvcphaZJg82W++KrsrCWRPpF
+HHAReepEsxb3A1R26WeRAeLp6mnNhP4QhceXysoIJ6AlthdH1BnH1d+U9XnEGyE0
+Bzn9j/VfdPexeRl5KiKy+j7wclD2rZ4T1RZiHlumRORixA2xT7wOtqK9lyT4vko=
+=yGbM
 -----END PGP SIGNATURE-----
