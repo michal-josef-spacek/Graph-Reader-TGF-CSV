@@ -162,13 +162,17 @@ L<Text::CSV>.
 
 =head1 SEE ALSO
 
-L<Graph::Reader>,
-L<Graph::Reader::Dot>,
-L<Graph::Reader::HTK>,
-L<Graph::Reader::LoadClassHierarchy>,
-L<Graph::Reader::UnicodeTree>,
-L<Graph::Reader::TGF>,
-L<Graph::Reader::XML>.
+=over
+
+=item L<Graph::Reader>
+
+base class for Graph file format readers
+
+=item L<Task::Graph::Reader>
+
+Install the Graph::Reader modules.
+
+=back
 
 =head1 REPOSITORY
 
