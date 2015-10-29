@@ -1,7 +1,7 @@
 0.02
  - Fix LICENSE file.
  - Improve LICENSE AND COPYRIGHT section in doc.
- - Update Module::Install to 1.14 version.
+ - Update Module::Install to 1.16 version.
 
 0.01 2014-06-05T18:18:25+02:00
  - First version.
