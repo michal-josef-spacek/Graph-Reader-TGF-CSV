@@ -68,6 +68,7 @@ Graph::Reader::TGF::CSV - Perl class for reading a graph from TGF format with CS
 =head1 SYNOPSIS
 
  use Graph::Reader::TGF::CSV;
+
  my $obj = Graph::Reader::TGF::CSV->new;
  my $graph = $obj->read_graph($tgf_csv_file);
 
