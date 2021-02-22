@@ -1,15 +1,12 @@
 package Graph::Reader::TGF::CSV;
 
-# Pragmas.
 use base qw(Graph::Reader::TGF);
 use strict;
 use warnings;
 
-# Modules.
 use Error::Pure qw(err);
 use Text::CSV;
 
-# Version.
 our $VERSION = 0.03;
 
 # Edge callback.
@@ -116,11 +113,9 @@ Graph::Reader::TGF::CSV - Perl class for reading a graph from TGF format with CS
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Graph::Reader::TGF::CSV;
  use IO::Barf qw(barf);
  use File::Temp qw(tempfile);
