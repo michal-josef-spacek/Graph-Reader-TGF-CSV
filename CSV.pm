@@ -171,7 +171,7 @@ Install the Graph::Reader modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Graph-Reader-TGF-CSV>
+L<https://github.com/michal-josef-spacek/Graph-Reader-TGF-CSV>
 
 =head1 AUTHOR
 
