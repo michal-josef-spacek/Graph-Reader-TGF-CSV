@@ -1,4 +1,4 @@
-0.03
+0.03 2023-11-24T21:26:36+01:00
  - Fix bugtracker.
  - Fix use lib '.' in Makefile.PL.
  - Improve LICENSE AND COPYRIGHT section in doc.
